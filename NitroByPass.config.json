@@ -1,0 +1,13 @@
+{
+    "currentVersionInfo": {
+        "version": "1.0",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "emojiSize": 40,
+        "screenSharing": true,
+        "emojiBypass": true,
+        "clientsidePfp": false,
+        "pfpUrl": ""
+    }
+}
