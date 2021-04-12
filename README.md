@@ -14,7 +14,7 @@ Telepítse fel a programot. A telepítés után a Discord automatikusan elidnul.
 ![](https://i.imgur.com/d9nbwn4.png)
 
 3. lépés
-Összehasonlításképpen, az új felhasználói beállításoknak így kell kinézniük (lásd a téglalapot zöld színnel). Ha nem, akkor próbálja meg futtatni a teéepítőt rendszergazdaként.
+Összehasonlításképpen, az új felhasználói beállításoknak így kell kinézniük (lásd a téglalapot zöld színnel). Ha nem, akkor próbálja meg futtatni a telepítőt rendszergazdaként.
 
 ![](https://i.imgur.com/R8FuvAO.png)
 
