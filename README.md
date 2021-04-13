@@ -1,4 +1,4 @@
-Ha már nitród nincs, itt van helyette egy plugin, amivel unlockolni tudod a screen sharinget valamint az emojikat/gifeket.
+Ha már nitród nincs, itt van helyette egy plugin, amivel unlockolni tudod a screen sharinget valamint emulálni a más szerveren lévő az emojikat/gifeket.
 (100MB-nál nagyobb fájlokat nem tudsz feltölteni :/)
 
 Telepítés
