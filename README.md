@@ -50,7 +50,7 @@ A beépülő modul konfigurálásához nyomja meg a beállítások gombot, és a
 ![](https://i.imgur.com/2YC0s3a.png)
 
 9. lépés
-Teszteld le! :D
+Tesztelje le! :D
 
 ![](https://i.imgur.com/F93SsZ7.png)
 
