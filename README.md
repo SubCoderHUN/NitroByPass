@@ -45,7 +45,7 @@ Térjen vissza újra a Discordhoz és látni fogja, hogy a beépülő modul (plu
 ![](https://i.imgur.com/dO3HvvZ.png)
 
 8. lépés
-A beépülő modul konfigurálásához nyomja meg a beállítások gombot, és a bővítménytől függően különböző lehetőségek várnak rád.
+A beépülő modul konfigurálásához nyomja meg a beállítások gombot, és a bővítménytől függően különböző lehetőségek várnak önre.
 
 ![](https://i.imgur.com/2YC0s3a.png)
 
