@@ -3,7 +3,7 @@
  * @version 1.0
  * @invite https://discord.gg/XC9pMSJ
  * @source https://github.com/SubCoderHUN/NitroByPass
- * @update https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js
+ * @updateURL https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js
  */
  /*
 	This library was made by ZackRauen, and below, NitroByPass made by SubCoder.
@@ -8990,10 +8990,12 @@ module.exports = (() => {
                 "name": "SubCoder",
                 "github_username": "SubCoderHUN"
             }],
-            "version": "1.0",
+            "version": "1.1 Hotfix",
             "description": "Unlock all screensharing modes, and use cross-server emotes & gif emotes. You CANNOT upload 100MB files though. :/",
+			"github": "https://github.com/SubCoderHUN/NitroByPass",
+			"github_raw": "https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js"
         },
-        "main": "NitroPerks.plugin.js"
+        "main": "NitroByPass.plugin.js"
     };
 
     return !global.ZeresPluginLibrary ? class {
@@ -9036,17 +9038,14 @@ module.exports = (() => {
                 Toasts,
                 PluginUtilities
             } = Api;
-            return class NitroPerks extends Plugin {
+            return class NitroByPass extends Plugin {
                 defaultSettings = {
                     "emojiSize": "40",
                     "screenSharing": true,
                     "emojiBypass": true,
-                    "clientsidePfp": false,
-                    "pfpUrl": "",
                 };
                 settings = PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
                 originalNitroStatus = 0;
-                clientsidePfp;
                 screenShareFix;
                 getSettingsPanel() {
                     return Settings.SettingPanel.build(_ => this.saveAndUpdate(), ...[
@@ -9111,35 +9110,6 @@ module.exports = (() => {
                     }
 
                     if(!this.settings.emojiBypass) Patcher.unpatchAll(DiscordModules.MessageActions)
-
-                    if (this.settings.clientsidePfp && this.settings.pfpUrl) {
-                        this.clientsidePfp = setInterval(()=>{
-                            document.querySelectorAll(`[src="${DiscordAPI.currentUser.discordObject.avatarURL.replace(".png", ".webp")}"]`).forEach(avatar=>{
-                                avatar.src = this.settings.pfpUrl
-                            })
-                            document.querySelectorAll(`[src="${DiscordAPI.currentUser.discordObject.avatarURL}"]`).forEach(avatar=>{
-                                avatar.src = this.settings.pfpUrl
-                            })
-                            document.querySelectorAll(`.avatarContainer-28iYmV.avatar-3tNQiO.avatarSmall-1PJoGO`).forEach(avatar=>{
-                                if (!avatar.style.backgroundImage.includes(DiscordAPI.currentUser.discordObject.avatarURL)) return;
-                                avatar.style = `background-image: url("${this.settings.pfpUrl}");`
-                            })
-                        }, 100)
-                    }
-                    if (!this.settings.clientsidePfp) this.removeClientsidePfp()
-                }
-                removeClientsidePfp() {
-                    clearInterval(this.clientsidePfp)
-                    document.querySelectorAll(`[src="${this.settings.pfpUrl}"]`).forEach(avatar=>{
-                        avatar.src = DiscordAPI.currentUser.discordObject.avatarURL
-                    })
-                    document.querySelectorAll(`[src="${this.settings.pfpUrl}"]`).forEach(avatar=>{
-                        avatar.src = DiscordAPI.currentUser.discordObject.avatarURL
-                    })
-                    document.querySelectorAll(`.avatarContainer-28iYmV.avatar-3tNQiO.avatarSmall-1PJoGO`).forEach(avatar=>{
-                        if (!avatar.style.backgroundImage.includes(this.settings.pfpUrl)) return;
-                        avatar.style = `background-image: url("${DiscordAPI.currentUser.discordObject.avatarURL}");`
-                    })
                 }
                 onStart() {
                     this.originalNitroStatus = DiscordAPI.currentUser.discordObject.premiumType;
@@ -9149,7 +9119,6 @@ module.exports = (() => {
 
                 onStop() {
                     DiscordAPI.currentUser.discordObject.premiumType = this.originalNitroStatus;
-                    this.removeClientsidePfp()
                     Patcher.unpatchAll();
                 }
             };
