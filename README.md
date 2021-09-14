@@ -7,53 +7,53 @@ Installation
 1st step
 Because Discord does not have a built-in script to install plug-ins, you must download another program. In this case, we will use BetterDiscord. Other programs allow you to customize the interface. To do so, click on this link: [https://betterdiscord.app/](https://betterdiscord.app/).
 
-! [] (https://i1.wp.com/www.swipetips.com/wp-content/uploads/2019/09/Step-1-1.png)
+![](https://i1.wp.com/www.swipetips.com/wp-content/uploads/2019/09/Step-1-1.png)
 
 Step 2
 Install the program. After installation, Discord will start automatically. Click on user settings to see if the installation worked.
 
-! [] (https://i.imgur.com/d9nbwn4.png)
+![](https://i.imgur.com/d9nbwn4.png)
 
 Step 3
 In comparison, the new user settings should look like this (see the rectangle in green). If not, try running the installer as an administrator.
 
-! [] (https://i.imgur.com/R8FuvAO.png)
+![](https://i.imgur.com/R8FuvAO.png)
 
 Step 4
 Now you need to download the documents above (NitroByPass.config.json, NitroByPass.plugin.js)
 
-! [] (https://i.imgur.com/F9aTJGD.png)
+![](https://i.imgur.com/F9aTJGD.png)
 
 Step 5
 Then you need to open the .zip file.
 
-! [] (https://i.imgur.com/dpEmAp1.png)
+![](https://i.imgur.com/dpEmAp1.png)
 
 Step 6
 Click the plugin file and extract the already downloaded .zip file located in the BetterDiscord folder to the plugin folder. There can be many other things within .zip, it all depends on the plugin you choose.
 
-! [] (https://i.imgur.com/lnZFLrN.png)
+![](https://i.imgur.com/lnZFLrN.png)
 
 If you can't find it, click plugins in the user settings menu. Then click on the open plugin folder option at the top of the application.
 
-! [] (https://i.imgur.com/CBmRASX.png)
+! [](https://i.imgur.com/CBmRASX.png)
 
 If successful, right-click on the plugin folder and open it in a new window. Copy and paste the plugin files into this folder.
 
 Step 7
 Return to Discord again and you will see that the plugin can be activated. If the activation process is successful; a message appears at the bottom of the application.
 
-! [] (https://i.imgur.com/dO3HvvZ.png)
+![](https://i.imgur.com/dO3HvvZ.png)
 
 Step 8
 To configure the plug-in, press the settings button and you will have different options depending on the plug-in.
 
-! [] (https://i.imgur.com/2YC0s3a.png)
+![](https://i.imgur.com/2YC0s3a.png)
 
 Step 9
 Test it! : D
 
-! [] (https://i.imgur.com/F93SsZ7.png)
+![](https://i.imgur.com/F93SsZ7.png)
 
 You're ready!
 
