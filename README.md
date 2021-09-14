@@ -1,4 +1,3 @@
-ENGLISH
 Here is a plugin that can be used to unlock screen sharing and emulate emojis / gifs on other servers.
 (You still can't upload files larger than 100MB: /)
 
@@ -60,7 +59,6 @@ You're ready!
 Ha már nitrója nincs, itt van helyette egy plugin, amivel unlockolni tudja a screen sharinget valamint emulálni a más szerveren lévő az emojikat/gifeket.
 (100MB-nál nagyobb fájlokat továbbra sem tud feltölteni :/)
 
-HUNGARIAN
 Telepítés
 -------------
 1. lépés
