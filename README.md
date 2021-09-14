@@ -4,7 +4,7 @@ Ha már nitrója nincs, itt van helyette egy plugin, amivel unlockolni tudja a s
 Telepítés
 -------------
 1. lépés
-Mivel a Discordnak nincs beépített szkriptje a beépülő modulok telepítéséhez, le kell töltenie egy másik programot. Ebben az esetben a BetterDiscordot fogjuk használni. Más programok lehetővé teszik a felület testreszabását. Ehhez kattintson erre a linkre: [https://betterdiscord.net/home/](https://betterdiscord.net/home/).
+Mivel a Discordnak nincs beépített szkriptje a beépülő modulok telepítéséhez, le kell töltenie egy másik programot. Ebben az esetben a BetterDiscordot fogjuk használni. Más programok lehetővé teszik a felület testreszabását. Ehhez kattintson erre a linkre: [https://betterdiscord.app/](https://betterdiscord.app/).
 
 ![](https://i1.wp.com/www.swipetips.com/wp-content/uploads/2019/09/Step-1-1.png)
 
