@@ -1,15 +1,15 @@
 /**
  * @name NitroByPass
- * @version 1.0
- * @invite https://discord.gg/XC9pMSJ
- * @source https://github.com/SubCoderHUN/NitroByPass
+ * @version v1.1 Hotfix
  * @updateURL https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js
+ * @invite https://discord.gg/2Y6CSsPspF
+ * @source https://github.com/SubCoderHUN/NitroByPass
  */
+
  /*
 	This library was made by ZackRauen, and below, NitroByPass made by SubCoder.
  */
-
-/*@cc_on
+/*@cc_o
 @if (@_jscript)
 	
 	// Offer to self-install for clueless users that try to run this directly.
@@ -132,7 +132,7 @@ module.exports = {
     info: {
         name: "NitroByPass",
         authors: [{
-            name: "SubCoder",
+            name: "SubCoder#4911",
         }],
     },
     changelog: [
@@ -8987,7 +8987,7 @@ module.exports = (() => {
         "info": {
             "name": "NitroByPass",
             "authors": [{
-                "name": "SubCoder",
+                "name": "SubCoder#4911",
                 "github_username": "SubCoderHUN"
             }],
             "version": "1.1 Hotfix",
