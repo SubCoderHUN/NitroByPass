@@ -35,7 +35,7 @@ Click the plugin file and extract the already downloaded .zip file located in th
 
 If you can't find it, click plugins in the user settings menu. Then click on the open plugin folder option at the top of the application.
 
-! [](https://i.imgur.com/CBmRASX.png)
+![](https://i.imgur.com/CBmRASX.png)
 
 If successful, right-click on the plugin folder and open it in a new window. Copy and paste the plugin files into this folder.
 
