@@ -1,15 +1,15 @@
 /**
  * @name NitroByPass
- * @version v1.1 Hotfix
- * @updateURL https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js
- * @invite https://discord.gg/2Y6CSsPspF
+ * @version 1.1
+ * @invite https://discord.gg/XC9pMSJ
  * @source https://github.com/SubCoderHUN/NitroByPass
+ * @updateURL https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js
  */
-
  /*
 	This library was made by ZackRauen, and below, NitroByPass made by SubCoder.
  */
-/*@cc_o
+
+/*@cc_on
 @if (@_jscript)
 	
 	// Offer to self-install for clueless users that try to run this directly.
@@ -36,6 +36,7 @@ module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
+
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -132,7 +133,7 @@ module.exports = {
     info: {
         name: "NitroByPass",
         authors: [{
-            name: "SubCoder#4911",
+            name: "SubCoder",
         }],
     },
     changelog: [
@@ -726,11 +727,17 @@ __webpack_require__.r(__webpack_exports__);
     get GuildSettingsWindow() {return _webpackmodules__WEBPACK_IMPORTED_MODULE_1__["default"].getByProps("open", "updateGuild");},
 
     /* Modals */
-    get ModalActions() {return _webpackmodules__WEBPACK_IMPORTED_MODULE_1__["default"].getByProps("openModal", "updateModal");},
+       get ModalActions() {
+        return {
+            openModal: WebpackModules.getModule(m => m?.toString().includes("onCloseCallback") && m?.toString().includes("Layer")),
+            closeModal: WebpackModules.getModule(m => m?.toString().includes("onCloseCallback()"))
+        };
+    },
     get ModalStack() {return _webpackmodules__WEBPACK_IMPORTED_MODULE_1__["default"].getByProps("push", "update", "pop", "popWithKey");},
     get UserProfileModals() {return _webpackmodules__WEBPACK_IMPORTED_MODULE_1__["default"].getByProps("fetchMutualFriends", "setSection");},
     get AlertModal() {return _webpackmodules__WEBPACK_IMPORTED_MODULE_1__["default"].getByPrototypes("handleCancel", "handleSubmit");},
-    get ConfirmationModal() {return _webpackmodules__WEBPACK_IMPORTED_MODULE_1__["default"].findByDisplayName("ConfirmModal");},
+       get ConfirmationModal() {return WebpackModules.getModule(m => m?.toString()?.includes("confirmText"));},
+
     // Grab with react components or open with UserProfileModals
     // get UserProfileModal() {
     //     return WebpackModules.find(m => {
@@ -7833,9 +7840,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const AccessibilityProvider = modules__WEBPACK_IMPORTED_MODULE_1__["WebpackModules"].getByProps("AccessibilityPreferencesContext").AccessibilityPreferencesContext.Provider;
-const LayerProvider = modules__WEBPACK_IMPORTED_MODULE_1__["WebpackModules"].getByProps("AppReferencePositionLayer").AppLayerProvider().props.layerContext.Provider; // eslint-disable-line new-cap
-
+//const AccessibilityProvider = modules__WEBPACK_IMPORTED_MODULE_1__["WebpackModules"].getByProps("AccessibilityPreferencesContext").AccessibilityPreferencesContext.Provider;
+//const LayerProvider = modules__WEBPACK_IMPORTED_MODULE_1__["WebpackModules"].getByProps("AppReferencePositionLayer").AppLayerProvider().props.layerContext.Provider; // eslint-disable-line new-cap
+const LayerProvider = modules__WEBPACK_IMPORTED_MODULE_1__["WebpackModules"].getModule(m => m?.displayName === "AppLayerProvider")?.().props.layerContext.Provider; // eslint-disable-line new-cap
 /** 
  * Setting field to extend to create new settings
  * @memberof module:Settings
@@ -8987,11 +8994,11 @@ module.exports = (() => {
         "info": {
             "name": "NitroByPass",
             "authors": [{
-                "name": "SubCoder#4911",
+                "name": "SubCoder",
                 "github_username": "SubCoderHUN"
             }],
-            "version": "1.1 Hotfix",
-            "description": "Unlock all screensharing modes, and use cross-server emotes & gif emotes. You CANNOT upload 100MB files though. :/",
+            "version": "1.2",
+            "description": "Unlock all screensharing modes, and use cross-server emotes & gif emotes. You CANNOT upload 100MB files!",
 			"github": "https://github.com/SubCoderHUN/NitroByPass",
 			"github_raw": "https://raw.githubusercontent.com/SubCoderHUN/NitroByPass/main/NitroByPass.plugin.js"
         },
